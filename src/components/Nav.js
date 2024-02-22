@@ -7,7 +7,11 @@ import { CgMenu, CgClose } from "react-icons/cg";
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState();
 
-  const StyledNav = styled.nav`
+  const StyledNav = styled.nav` 
+  .nav_div{
+    background-color: navy; 
+  }
+  
   .navbar-lists {
     display: flex;
     gap: 4.8rem;
@@ -21,7 +25,7 @@ const Nav = () => {
         font-size: 1.8rem;
         font-weight: 500;
         text-transform: uppercase;
-        color: ${({ theme }) => theme.colors.black};
+        color: ${({ theme }) => theme.colors. black};
         transition: color 0.3s linear;
       }
 
@@ -112,7 +116,7 @@ const Nav = () => {
       position: absolute;
       top: 0;
       left: 0;
-      background-color: #fff;
+      background-color: #ffffff;
 
       display: flex;
       justify-content: center;
@@ -132,7 +136,7 @@ const Nav = () => {
       transform: translateX(0);
       z-index: 999;
       transform-origin: right;
-      transition: all 3s linear;
+      transition: all 3s linear; 
 
       .navbar-link {
         font-size: 4.2rem;
@@ -162,7 +166,7 @@ const Nav = () => {
   `;
 
   return (
-    <StyledNav>
+    <StyledNav className="nav_div">
         <div className= { menuIcon ? "navbar active" : "navbar"}>
           <ul className="navbar-lists">
             <li>
@@ -217,74 +221,6 @@ const Nav = () => {
           </div>
         </div>
     </StyledNav>
-
-
-
-
-
-
-
-
-
-
-    // <Nav>
-    //   <div className={menuIcon ? "navbar active" : "navbar"}>
-    //     <ul className="navbar-lists">
-    //       <li>
-    //         <NavLink
-    //           to="/"
-    //           className="navbar-link "
-    //           onClick={() => setMenuIcon(false)}>
-    //           Home
-    //         </NavLink>
-    //       </li>
-    //       <li>
-    //         <NavLink
-    //           to="/about"
-    //           className="navbar-link "
-    //           onClick={() => setMenuIcon(false)}>
-    //           About
-    //         </NavLink>
-    //       </li>
-    //       <li>
-    //         <NavLink
-    //           to="/products"
-    //           className="navbar-link "
-    //           onClick={() => setMenuIcon(false)}>
-    //           Products
-    //         </NavLink>
-    //       </li>
-    //       <li>
-    //         <NavLink
-    //           to="/contact"
-    //           className="navbar-link "
-    //           onClick={() => setMenuIcon(false)}>
-    //           Contact
-    //         </NavLink>
-    //       </li>
-    //       <li>
-    //         <NavLink to="/cart" className="navbar-link cart-trolley--link">
-    //           <FiShoppingCart className="cart-trolley" />
-    //           <span className="cart-total--item"> 10 </span>
-    //         </NavLink>
-    //       </li>
-    //     </ul>
-
-    //     {/* two button for open and close of menu */}
-    //     <div className="mobile-navbar-btn">
-    //       <CgMenu
-    //         name="menu-outline"
-    //         className="mobile-nav-icon"
-    //         onClick={() => setMenuIcon(true)}
-    //       />
-    //       <CgClose
-    //         name="close-outline"
-    //         className="mobile-nav-icon close-outline"
-    //         onClick={() => setMenuIcon(false)}
-    //       />
-    //     </div>
-    //   </div>
-    // </Nav>
   );
 };
 

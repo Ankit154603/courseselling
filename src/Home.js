@@ -7,7 +7,7 @@ import FeatureProduct from "./components/FeatureProduct";
 const Home = () => {
 
     const data = {
-        name : "Tracking System",
+        name : "KEEP ALL CONTROL OF YOUR VEHICLES IN YOUR HAND",
     };
 
     return ( 

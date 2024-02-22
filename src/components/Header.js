@@ -6,7 +6,6 @@ import Nav from "./Nav";
 const Header = () => {
     return (
        <MainHeader>
-       {/* <h3>Course Selling App</h3> */}
         <NavLink to= "/">
             <img src="./images/logo.jpeg" alt="My logo img" />
         </NavLink>
@@ -14,7 +13,6 @@ const Header = () => {
        </MainHeader>
     )
 };
-
 const MainHeader = styled.header`
 padding: 0 4.8rem;
 height: 10rem;
@@ -24,8 +22,9 @@ justify-content: space-between;
 align-items: center;
 position: relatives;
 
-.logo {
+.img {
     height: 5rem;
+    background-color:navy;
 }
 `;
 

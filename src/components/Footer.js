@@ -25,7 +25,7 @@ const Footer = () => {
             <footer>
                 <div className="container grid grid-four-column">
                     <div className="footer-about">
-                        <h3>Z1 Tracking System</h3>
+                        <h3>Keep ALL CONTROL OF YOUR VEHICLES IN YOUR HAND</h3>
                         <p>"Unlock your tech potential with our cutting-edge tracking System. Enroll today for safe drive!</p>
                     </div>
                     <div className="footer-subscribe">

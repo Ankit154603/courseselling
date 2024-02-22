@@ -9,13 +9,10 @@ const FeatureProduct = () => {
     if(isLoading) {
         return <div>.......Loading</div>
     }
-
- 
-
     return (
       <Wrapper className="section">
         <div className="container">
-            <div className="intro-data"> Check Now
+            <div className="intro-data"> <h5>Check Now</h5>
             </div>
             <div className="common-heading">Our Feature Services</div>
             <div className="grid grid-three-column">
